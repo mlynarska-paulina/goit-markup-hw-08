@@ -1,0 +1,6 @@
+input:focus-within,
+input:focus-within + svg {
+  fill: var(--color-active);
+  border-color: var(--color-active);
+  outline: none;
+}

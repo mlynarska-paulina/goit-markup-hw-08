@@ -1,0 +1,63 @@
+.bottom {
+  padding: 60px 0;
+  background: var(--background-color-dark);
+  &__container {
+    display: flex;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__wrapper {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: -70px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      position: absolute;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: left;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: center;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+  &__place {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-light);
+    padding: 20px 0 9px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__communication {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__contact {
+    padding-bottom: 9px;
+  }
+}

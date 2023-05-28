@@ -1,0 +1,131 @@
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  &__toggle {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__icon {
+    fill: var(--logo-color-dark);
+    &:hover {
+      fill: var(--color-active);
+    }
+    &:focus {
+      fill: var(--color-active);
+    }
+  }
+  &__icon-close {
+    fill: var(--color-dark);
+    &:hover {
+      fill: var(--color-active);
+    }
+    &:focus {
+      fill: var(--color-active);
+    }
+  }
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: var(--color-light);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    &:hover {
+      color: var(--color-active);
+    }
+    &:focus {
+      color: var(--color-active);
+    }
+  }
+  &__contact {
+    list-style: none;
+  }
+  &__communication {
+    text-decoration: none;
+  }
+  &__phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+    color: var(--color-active);
+    text-decoration: none;
+    position: absolute;
+    bottom: 194px;
+  }
+  &__email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-light-secondary);
+    text-decoration: none;
+    position: absolute;
+    bottom: 134px;
+  }
+  &__media {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 48px;
+  }
+  &__social {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-active);
+    padding-right: 10px;
+  }
+  &--border {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+  &--space {
+    padding-left: 10px;
+  }
+}
+.menu__container.is-open {
+  transform: translateX(0);
+}
+.menu__container .menu__toggle {
+  position: absolute;
+  top: 21px;
+  right: 25.33px;
+  color: var(--color-dark);
+}
+.menu__list .menu__link {
+  display: block;
+  color: var(--color-dark);
+  text-decoration: none;
+}

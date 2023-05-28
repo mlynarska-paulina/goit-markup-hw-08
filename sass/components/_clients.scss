@@ -1,0 +1,45 @@
+.clients {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+  &__logo {
+    box-sizing: border-box;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: var(--icon-color);
+    &:hover {
+      --icon-color: var(--color-active);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 226px;
+      height: 92px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 210px;
+      height: 92px;
+    }
+  }
+  &__icon {
+    fill: var(--icon-color);
+    &:hover {
+      --icon-color: var(--color-active);
+    }
+  }
+}

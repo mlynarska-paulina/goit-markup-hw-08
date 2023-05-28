@@ -1,0 +1,48 @@
+.description {
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+    @media screen and (min-width: 480px) {
+      justify-content: center;
+    }
+  }
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  &__icon {
+    background-color: var(--background-color-light);
+    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 25px 142px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      padding: 25px 190px;
+    }
+  }
+}
+.paragraf {
+  color: var(--color-light-secondary);
+}
